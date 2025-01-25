@@ -1,0 +1,61 @@
+.members-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .members-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .inner-box {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .members-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table-header {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .delete-button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkblue;
+  }
+  
+  .no-members {
+    text-align: center;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,61 @@
+.announcements-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .announcements-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .announcements-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  .announcementstable-header {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #e0e0e0;
+  }
+  
+  .announcementstable-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .announcementstable-cell {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .announcementsdelete-button {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .announcementsdelete-button:hover {
+    background-color: darkred;
+  }
+  
+  .announcementsno-announcements {
+    margin-top: 20px;
+  }
+  
+  .add-announcement-button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-announcement-button:hover {
+    background-color: darkblue;
+  }
+  

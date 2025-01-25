@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer {
+  height: 280px;
+  padding: 25px;
+  background-color: #1a1a1a;
+}
+.footerlinks {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer-heading {
+  width: 250px;
+  font-size: 28px;
+  color: #d3a4ff;
+  margin-left: 10px;
+}
+.footerlist {
+  list-style-type: none;
+  width: 100px;
+ 
+  text-align: center;
+}
+.footerlist li {
+  margin-top: 20px;
+}
+.footer-left {
+  margin-left: 15px;
+  width: 230px;
+}
+
+.footerlist li:hover {
+  transform: scale(1.2);
+}
+.footerlist li a:hover {
+  color: #d3a4ff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right {
+  width: 300px;
+  text-align: center;
+  height: 200px;
+}
+
+.footer-right h3 {
+  color: #d3a4ff;
+  font-size: 28px;
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-size: 1.6rem;
+  color: white;
+}
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #d3a4ff;
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+
+/* For tablets (max width: 768px) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    text-align: center; /* Center align content */
+    height: auto;
+  }
+
+  .footer-left {
+    margin-bottom: 20px;
+
+    display: grid;
+    justify-items: center;
+    margin-right: 100px;
+  }
+  .footer-right {
+    margin-bottom: 20px; /* Adds spacing between sections */
+  }
+
+  .footer-heading {
+    font-size: 24px; /* Slightly smaller heading on tablets */
+  }
+
+  .social-icons {
+    font-size: 1.4rem; /* Slightly smaller icons */
+  }
+}
+
+/* For mobile devices (max width: 480px) */
+@media (max-width: 480px) {
+  .footer-heading {
+    font-size: 20px; /* Smaller heading on mobile */
+  }
+
+  .social-icons {
+    font-size: 1.2rem; /* Smaller icons */
+  }
+
+  .footerlist li {
+    margin-top: 15px; /* Reduce spacing between list items */
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1 1 100%; /* Make each section take full width */
+    text-align: center; /* Center align text */
+  }
+
+  .footer {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+}

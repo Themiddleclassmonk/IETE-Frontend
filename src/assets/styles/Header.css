@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+  }
+  #iete-logo {
+    width: 110px;
+    float: left;
+  }
+  .navbar-list a {
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+  }
+  .navbar-list ul li {
+    list-style-type: none;
+    margin-top: 40px;
+    
+  }
+  .navbar-list ul {
+    display: flex;
+    gap: 30px;
+    
+  }
+  .navbar-list {
+      float: right;
+      margin-right: 40px;
+  }
+  .navbar-list a:hover{
+      color: orangered;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 768px) {
+    .header {
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .main{
+      padding-top: 100px; 
+    }
+    .card-container{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .header {
+      width: 100%;
+      height: 110px;
+      background-color: rgb(0, 0, 0);
+      position: static;
+     
+    }
+    #iete-logo {
+      width: 90px; /* Smaller logo for tablets */
+      float: none; /* Center the logo */
+      margin-bottom: 10px;
+    }
+  
+    .navbar-list {
+      float: none; /* Reset float for center alignment */
+      margin: 0 auto;
+    }
+  
+    .navbar-list ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .navbar-list ul li {
+      margin-top: 0;
+    }
+  }
+  
+  /* For mobile devices (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .header {
+      height: auto;
+      padding: 10px;
+    }
+  
+    #iete-logo {
+      width: 70px; /* Smaller logo for mobile */
+      margin-bottom: 15px;
+    }
+  
+    .navbar-list ul {
+      gap: 10px; /* Smaller gap for mobile */
+    }
+  
+    .navbar-list ul li {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .navbar-list a {
+      font-size: 14px; /* Smaller text size */
+    }
+  
+    .navbar-list a:hover {
+      color: orangered;
+    }
+  }
+  
