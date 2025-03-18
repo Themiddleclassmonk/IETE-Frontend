@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/styles/AdminDashboard.css'; // Import your CSS file
 
-const AdminDashboard = () => {
+const AdminDashboard = () => { 
   const [events, setEvents] = useState([]);
   const navigate = useNavigate();
 

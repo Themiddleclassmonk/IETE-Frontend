@@ -5,7 +5,7 @@ import ieteLogo from '../assets/images/ietelogo.png';
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">
+      <div className="header-logo">
         <img src={ieteLogo} id="iete-logo" alt="IETE Logo" />
       </div>
       <nav className="navbar">

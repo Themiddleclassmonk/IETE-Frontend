@@ -42,26 +42,26 @@ const ShowMembers = () => {
   };
 
   return (
-    <div id="membersContainer" className="members-container">
-      <h1 className="members-title">Members</h1>
-      <div className="inner-box">
-        <table className="members-table">
+    <div id="membersContainer" className="show-members-container">
+      <h1 className="show-members-title">Members</h1>
+      <div className="show-inner-box">
+        <table className="show-members-table">
           <thead>
             <tr>
-              <th className="table-header">Name</th>
-              <th className="table-header">Position</th>
-              <th className="table-header">Action</th>
+              <th className="show-table-header">Name</th>
+              <th className="show-table-header">Position</th>
+              <th className="show-table-header">Action</th>
             </tr>
           </thead>
           <tbody>
             {members.length > 0 ? (
               members.map((member) => (
-                <tr key={member._id} className="table-row">
-                  <td className="table-cell">{member.memberName}</td>
-                  <td className="table-cell">{member.position}</td>
-                  <td className="table-cell">
+                <tr key={member._id} className="show-table-row">
+                  <td className="show-table-cell">{member.memberName}</td>
+                  <td className="show-table-cell">{member.position}</td>
+                  <td className="show-table-cell">
                     <button
-                      className="delete-button"
+                      className="show-delete-button"
                       onClick={() => handleDelete(member._id)}
                     >
                       Delete
@@ -71,7 +71,7 @@ const ShowMembers = () => {
               ))
             ) : (
               <tr>
-                <td colSpan="3" className="no-members">No members found</td>
+                <td colSpan="3" className="show-no-members">No members found</td>
               </tr>
             )}
           </tbody>

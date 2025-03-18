@@ -1,0 +1,119 @@
+
+  .add-member-form-container
+  {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+
+  }
+  #addMemberForm{
+    border: 2px solid gray;
+    width: 60%;
+    margin: 40px auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px ;
+    box-shadow: 0 0 6px gray;
+
+  }
+  .add-member-div {
+    margin-bottom: 30px;
+  }
+
+  .add-member-form-input,.add-member-form-select {
+    padding: 10px;
+  }
+
+  .add-member-submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+  }
+  .add-member-submit-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* For tablets and smaller desktop screens */
+@media screen and (max-width: 1024px) {
+  #addMemberForm {
+    width: 80%;
+    padding: 4%;
+  }
+  
+  .add-member-submit-button {
+    width: 60%;
+  }
+}
+
+/* For tablets in portrait and large mobile phones */
+@media screen and (max-width: 768px) {
+  #addMemberForm {
+    width: 90%;
+    padding: 5%;
+  }
+  
+  .add-member-submit-button {
+    width: 70%;
+  }
+  
+  .add-member-form-input,
+  .add-member-form-select {
+    width: 80%;
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+  .add-member-form-container {
+    padding: 10px;
+  }
+  
+  #addMemberForm {
+    width: 95%;
+    padding: 6%;
+    margin: 20px auto;
+  }
+  
+  .add-member-submit-button {
+    width: 90%;
+    font-size: 14px;
+  }
+  
+  .add-member-form-input,
+  .add-member-form-input {
+    width: 90%;
+    padding: 8px;
+  }
+  
+  .add-member-div {
+    margin-bottom: 20px;
+  }
+}
+
+/* For very small mobile devices */
+@media screen and (max-width: 320px) {
+  #addMemberForm {
+    width: 100%;
+    padding: 4%;
+    border-width: 1px;
+  }
+  
+  .add-member-submit-button {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}

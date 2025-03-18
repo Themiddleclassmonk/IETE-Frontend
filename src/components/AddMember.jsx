@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios';
+import '../assets/styles/AddMember.css';
 import { useNavigate } from 'react-router-dom';
 
 const AddMember = () => {
@@ -68,39 +69,48 @@ const AddMember = () => {
   };
 
   return (
-    <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h1>Add Member</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Member Name:</label>
-          <input 
-            type="text" 
-            value={memberName} 
-            onChange={(e) => setMemberName(e.target.value)} 
-            required 
-          />
-        </div>
-        <div>
-          <label>Position:</label>
-          <select value={position} onChange={handlePositionChange} required>
-            <option value="">Select Position</option>
-            <option value="president">President</option>
-            <option value="vice president">Vice President</option>
-            <option value="secretary">Secretary</option>
-            <option value="treasurer">Treasurer</option>
-            <option value="photography head">Photography Head</option>
-            <option value="event and management head">Event and Management Head</option>
-            <option value="publicity head">Publicity Head</option>
-            <option value="creativity head">Creativity Head</option>
-            <option value="technical head">Technical Head</option>
-            <option value="documentation head">Documentation Head</option>
-            <option value="content and media head">Content and Media Head</option>
-            <option value="member">Member</option>
-          </select>
-        </div>
-        <button type="submit">Add Member</button>
-      </form>
+    <div className="add-member-form-container add-member-div" style={{ padding: '20px', textAlign: 'center' }}>
+  <h1>Add Member</h1>
+  <form onSubmit={handleSubmit} id="addMemberForm">
+    <div className="add-member-div">
+      <label htmlFor="memberName">Member Name:</label>
+      <input 
+        type="text"
+        id="memberName"
+        className="add-member-form-input"
+        value={memberName}
+        onChange={(e) => setMemberName(e.target.value)}
+        required
+      />
     </div>
+    <div className="add-member-div">
+      <label htmlFor="position">Position:</label>
+      <select
+        id="position"
+        className="add-member-form-select"
+        value={position}
+        onChange={handlePositionChange}
+        required
+      >
+        <option value="">Select Position</option>
+        <option value="president">President</option>
+        <option value="vice president">Vice President</option>
+        <option value="secretary">Secretary</option>
+        <option value="treasurer">Treasurer</option>
+        <option value="photography head">Photography Head</option>
+        <option value="event and management head">Event and Management Head</option>
+        <option value="publicity head">Publicity Head</option>
+        <option value="creativity head">Creativity Head</option>
+        <option value="technical head">Technical Head</option>
+        <option value="documentation head">Documentation Head</option>
+        <option value="content and media head">Content and Media Head</option>
+        <option value="member">Member</option>
+      </select>
+    </div>
+    <button type="submit" className="add-member-submit-button">Add Member</button>
+  </form>
+</div>
+
   );
 };
 

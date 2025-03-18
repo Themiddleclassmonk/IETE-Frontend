@@ -1,0 +1,35 @@
+
+.addannouncement {
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  width: 70%;
+  margin: 70px auto;
+  padding: 3%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.addannouncement h1{
+    margin-bottom: 40px;
+}
+.announcement-textarea {
+  width: 50%;
+  height: 100px;
+  border: 1px solid rgb(21, 21, 21);
+}
+.add-announcement-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgb(53, 53, 217);
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.add-announcement-button:hover{
+  background-color: white;
+  color: black;
+}

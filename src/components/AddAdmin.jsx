@@ -21,8 +21,8 @@ const AddAdmin = () => {
           if (!response.ok) {
             navigate('/admin/loginForm');
           }
-          else
-            navigate("/admin/adminDashboard")
+          // else
+          //   navigate("/admin/adminDashboard")
         } catch (err) {
           alert('Failed');
           navigate('/admin/loginForm');

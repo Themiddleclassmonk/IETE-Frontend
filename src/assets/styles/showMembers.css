@@ -1,14 +1,14 @@
-.members-container {
+.show-members-container {
     padding: 20px;
     text-align: center;
   }
   
-  .members-title {
+  .show-members-title {
     font-size: 28px;
     margin-bottom: 20px;
   }
   
-  .inner-box {
+  .show-inner-box {
     padding: 40px;
     text-align: center;
     background-color: #f0f0f0;
@@ -19,28 +19,28 @@
     box-sizing: border-box;
   }
   
-  .members-table {
+  .show-members-table {
     margin: auto;
     border-collapse: collapse;
     width: 100%;
   }
   
-  .table-header {
+  .show-table-header {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #e0e0e0;
   }
   
-  .table-cell {
+  .show-table-cell {
     padding: 10px;
     border: 1px solid #ccc;
   }
   
-  .table-row:nth-child(even) {
+  .show-table-row:nth-child(even) {
     background-color: #f9f9f9;
   }
   
-  .delete-button {
+  .show-delete-button {
     padding: 10px 15px;
     cursor: pointer;
     background-color: blue;
@@ -50,11 +50,11 @@
     border-radius: 5px;
   }
   
-  .delete-button:hover {
+  .show-delete-button:hover {
     background-color: darkblue;
   }
   
-  .no-members {
+  .show-no-members {
     text-align: center;
     font-weight: bold;
   }
