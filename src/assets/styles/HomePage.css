@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .homecontent{
@@ -25,14 +26,31 @@
   color: black;
 }
 
-
+.Quote{
+  background-color: #140028;
+  height: 20rem;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+  color: aliceblue;
+}
 .homemain{
   padding-top: 170px; 
   padding-bottom: 50px;
+  background-color: #140028;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 100%;
 }
 .homecard{
-  width: 270px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
+  background-color: antiquewhite;
 }
 .homecard img{
   width: 100%;
@@ -40,11 +58,11 @@
 
 .homecard-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   height: 390px;
-  
+  padding: 10px;
 }
 .homecard{
   border: 2px solid rgb(0, 0, 0);
@@ -61,12 +79,13 @@
   color: black;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 7px;
+  padding: 5px;
   
 }
 .homeview-more{
-  margin-top: 30px ;
-  margin-left: 70px;
+  bottom: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
  
 }
 .homecard a:hover{

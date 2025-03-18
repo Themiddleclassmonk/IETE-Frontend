@@ -13,13 +13,13 @@ import AddMember from './components/AddMember';
 import ShowMembers from './components/showMembers';
 import AddAdmin from './components/AddAdmin';
 import HomePage from './components/HomePage';
-// import Header from './components/Header';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      {/* <Header/> */}
+      <Header/>
       <Router>
         <Routes>
         <Route path="/" element={<HomePage/>} />
